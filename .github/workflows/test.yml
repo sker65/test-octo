@@ -24,5 +24,5 @@ jobs:
         with:
           url: https://app.clickup.com/
           token: ${{ secrets.AUTOMAGICALLY_TOKEN }}
-          testTargetId: d46e8f07-8dec-40d3-9b37-ce91615654f3
+          testTargetId: 43cbfaa9-66bd-4ad6-8870-f77f44a8ef8c
           blocking: false
