@@ -17,7 +17,7 @@ on:
 jobs:
   automagically:
     name: "Executing E2E tests 🚀"
-    runs-on: depot-ubuntu-22.04
+    runs-on: ubuntu-22.04
     timeout-minutes: 30
     steps:
       - uses: OctoMind-dev/automagically-action-execute@v2
