@@ -15,11 +15,14 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  test:
-    uses: OctoMind-dev/automagically-action-execute@v2
-    with:
-      url: https://app.clickup.com/
-      token: ${{ secrets.AUTOMAGICALLY_TOKEN }}
-      testTargetId: d46e8f07-8dec-40d3-9b37-ce91615654f3
-      blocking: FALSE
+  automagically:
+    name: "Executing E2E tests 🚀"
+    runs-on: depot-ubuntu-22.04
+    timeout-minutes: 30
+    steps:
+      - uses: OctoMind-dev/automagically-action-execute@v2
+        with:
+          url: https://app.clickup.com/
+          token: ${{ secrets.AUTOMAGICALLY_TOKEN }}
+          testTargetId: d46e8f07-8dec-40d3-9b37-ce91615654f3
+          blocking: false
