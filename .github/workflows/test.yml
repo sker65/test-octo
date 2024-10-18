@@ -17,8 +17,8 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   test:
-    - uses: OctoMind-dev/automagically-action-execute@v2
-      with:
+    uses: OctoMind-dev/automagically-action-execute@v2
+    with:
       url: https://app.clickup.com/
       token: ${{ secrets.AUTOMAGICALLY_TOKEN }}
       testTargetId: d46e8f07-8dec-40d3-9b37-ce91615654f3
